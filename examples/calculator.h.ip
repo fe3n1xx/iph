@@ -1,0 +1,10 @@
+#d
+    #global #d num1 ##;
+    #global #d num2 ##;
+    #global #d num3 ##;
+    #global #d num4 ##;
+    #global #d operator1 "";
+    #global #d operator2 "";
+#end d
+#f
+#end f

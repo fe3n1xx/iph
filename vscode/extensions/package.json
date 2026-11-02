@@ -1,0 +1,29 @@
+{
+    "name": "IPH",
+    "version": 1.00,
+    "engines": {
+        "vscode": ">=0.9.0-pre1"
+    },
+    "publisher": "nellemat",
+    "contributes": {
+        "languages": [{
+            "id": "IPH",
+            "aliases": ["IPH", "iph"],
+            "extensions": [
+                ".iph",
+                ".ip",
+                ".h.iph",
+                ".h.ip",
+                ".e.iph",
+                ".e.ip"
+            ]
+        }],
+        "grammars": [
+            {
+                "language": "IPH",
+                "scopeName": "source.iph",
+                "path": "./syntaxes/iph.tmLanguage."
+            }
+        ]
+    }
+}
