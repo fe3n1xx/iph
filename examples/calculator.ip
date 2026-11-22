@@ -1,12 +1,14 @@
-#i 
+#start i 
     #i <calculator.h.ip>
 #end i
-#d
-#end d
+
+#skip d
+
 run()iph;
-#f
-#end f
-#c
+
+#skip f
+
+#start c
     num1 = in("Number 1?");
     num2 = in("Number 2?");
     operator1 = in ("Operator 1?");
@@ -14,10 +16,11 @@ run()iph;
     num4 = in("Number 4?");
     operator2 = in("Operator 2?");
     /*Actual calculator*/
-    # repeat 2 (op:: 1: operator1, 2: operator2::n1:: 1: num1, 2: num3::n2:: 1: num2, 2: num4)
-        # if op == "x"
+
+    #repeat 2 (op:: 1: operator1, 2: operator2::n1:: 1: num1, 2: num3::n2:: 1: num2, 2: num4)
+        # if op == "*"
             out(cl(n1*n2));
-        # else if op == "%"
+        # else if op == "/"
             out(cl(n1/n2));
         # else if op == "+"
             out(cl(n1+n2));

@@ -1,0 +1,10 @@
+#skip i
+#skip d
+
+run()iph
+
+#skip f
+
+#start c 
+    out("Hello, World!");
+#end c
